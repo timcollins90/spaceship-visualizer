@@ -2,6 +2,8 @@
 # Audio Spaceship Visualizer
 ![Visualizer Screenshot](./public/spaceship.png)
 
+* Live preview https://timothyjosephcollins.com/visualizer
+
 A standalone React application that creates an immersive, audio-reactive 3D Visualizer. The application uses the Web Audio API to analyze microphone input in real-time and **Three.js** to visualize that data as a starfield and asteroid belt that reacts to bass, mid, and treble frequencies.
 
 ## 🚀 Features
