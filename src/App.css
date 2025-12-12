@@ -1,0 +1,36 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Force all parents to be full screen */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Disables scrollbars */
+  background: #000;
+}
+
+/* The main container for your app */
+.visualizer-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute; /* Locks it to the screen */
+  top: 0;
+  left: 0;
+}
+
+#startButton {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  padding: 24px 44px; font-size: 28px; font-weight: 700; border-radius: 16px;
+  background: linear-gradient(90deg, #12c2e9, #c471ed, #f64f59);
+  color: #fff; border: none; box-shadow: 0 4px 32px #c471ed66;
+  z-index: 10; cursor: pointer; text-shadow: 0 2px 16px #fff8;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#cockpit-overlay {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+  background-image: url('https://soundspektra.com/videos/spaceship/spaceshipx.png');
+  background-size: cover; background-position: center; z-index: 5; pointer-events: none;
+}
